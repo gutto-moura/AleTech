@@ -1,0 +1,285 @@
+/*
+=============
+    RESETANDO CSS
+=============
+*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+=============
+    ESTILIZAÇÃO MENU
+=============
+*/
+header{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.logo > img{
+    width: 35%;
+    margin-left: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+nav > a{
+    margin-left: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+a:hover{
+    border-bottom: 4px solid #8B008B;
+}
+/*
+=============
+    ESTILIZAÇÃO HOME
+=============
+*/
+body{
+    width: 80%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.secao-home{
+    width: 100%;
+    height: 70vh;
+    max-height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+.secao-home > video{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 100%;
+}
+.nome-logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    background:rgba(0,0,0,0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nome-logo > h1{
+    padding:20px 0;
+    text-align: center;
+    color: white;
+    font-size: 7rem;
+    vertical-align: auto;
+    font-family: sans-serif;
+}
+e{
+    font-size: 8rem;
+    color: #C71585;
+    font-style: italic;
+}
+.nome-logo > h3{
+    color: #fff;
+    margin-top: -50px;
+    font-size: 2rem;
+}
+/*
+=============
+    ESTILIZAÇÃO PLANOS
+=============
+*/
+
+.secao-planos > h2{
+   text-align: center;
+   padding: 30px;
+    font-size: 45px;
+    background-color: #D8BFD8;
+    margin-top: 5px;
+}
+.detalhes-planos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #D8BFD8;
+}
+.detalhes-planos > h2{
+    text-align: center;
+
+}
+.descricao-planos{
+    margin-bottom: 40px;
+}
+.descricao-planos > h3{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    
+}
+.descricao-planos > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descricao-planos:hover{
+  transform: scale(1.2);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:  0 0 0.2em #ccc;
+  background-color: #fff;
+}
+.descricao-planos > ul > li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+.descricao-planos > ul > li > svg{
+    margin-left: 10px;
+
+}
+
+/*
+=============
+    ESTILIZAÇÃO TECNOLOGIAS
+=============
+*/
+@keyframes tech{
+    0%, 20%, 60%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-20px);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+}
+.secao-tecnologias{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.secao-tecnologias > h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+ }
+ .detalhes-tecnologias{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 50px;
+ }
+ .tecnologias{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+ }
+
+.tecnologias:hover{
+    animation: tech 1s;
+}
+
+/*
+=============
+    ESTILIZAÇÃO E-MAIL
+=============
+*/
+.secao-email{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #D8BFD8;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+.cadastro-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.campo-email{
+    border: 2px solid gray;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: none;
+}
+.botao-enviar{
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 200px;
+    cursor: pointer;
+    transform: all 1000ms ease;
+    position: relative;
+    box-sizing: border-box;
+    background-color:  	#00CED1;
+
+
+}
+
+.botao-enviar:hover{
+    border: 2px solid #00CED1;
+    background-color: #fff;
+    color: #00CED1;
+}
+
+/*
+=============
+    ESTILIZAÇÃO FOOTER
+=============
+*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.footer-img > img{
+    width: 100%;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footer-menu > nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu > strong{
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+.footer-menu > #strong-1{
+    margin-top: 50px;
+}
